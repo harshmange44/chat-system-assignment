@@ -1,0 +1,13 @@
+node_modules
+dist
+*.tsbuildinfo
+.env
+.env.*
+*.log
+coverage
+.pnpm-store
+.turbo
+.DS_Store
+
+# Allow example env files
+!.env.example

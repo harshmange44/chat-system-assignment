@@ -1,0 +1,19 @@
+{
+  "name": "chat-system",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.6.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:api": "turbo run dev --filter=api",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "migration:run": "pnpm --filter api migration:run",
+    "migration:revert": "pnpm --filter api migration:revert",
+    "migration:show": "pnpm --filter api migration:show"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  }
+}
